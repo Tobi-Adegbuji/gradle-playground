@@ -1,0 +1,29 @@
+
+//To see every property run the gradle properties cmd
+
+plugins {
+    id 'java'
+    id 'scala'
+
+}
+
+group 'dev.tobiadegbuji' //Company that made App
+version '1.0-SNAPSHOT' //Current Version of App
+
+//Where dependencies come from
+repositories {
+    mavenCentral()
+}
+
+//Dependencies
+dependencies {
+    compile 'com.google.code.gson:gson:2.8.6'
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.13.4'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+
+test {
+    useJUnitPlatform()
+}
