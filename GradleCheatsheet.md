@@ -52,6 +52,13 @@
 
   ```-Dspring.profiles.active=dev ```
 
+* View ALL dependencies (Including the dependencies of your listed dependencies AKA Transitive Dependencies)
+
+  ```-gradle dependencies ```
+
+* View dependencies listed in build.gradle (Higher Level View)
+
+  ```-gradle dependencies --configuration compile ```
   
 ## Configuration Cheatsheet
 

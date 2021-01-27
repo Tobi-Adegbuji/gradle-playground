@@ -4,6 +4,8 @@
 plugins {
     id 'java'
     id 'scala'
+    //Allows us to use the command "gradle 'project-report' "
+    id 'project-report'
 
 }
 
