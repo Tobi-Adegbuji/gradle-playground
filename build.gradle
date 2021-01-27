@@ -19,8 +19,10 @@ repositories {
 
 //Dependencies
 dependencies {
-    compile 'com.google.code.gson:gson:2.8.6'
-    compile group: 'org.scala-lang', name: 'scala-library', version: '2.13.4'
+    //We are telling gradle we depend on this module (that we created)
+    //Upon building, it will include this jar with our project jar
+    //This module can be used in other projects as well.
+    compile project(':json-display')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }

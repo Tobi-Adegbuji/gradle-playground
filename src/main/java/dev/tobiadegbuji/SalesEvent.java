@@ -48,7 +48,7 @@ public class SalesEvent {
 
     public static void main(String[] args){
         SalesEvent salesEvent = new SalesEvent("1","232 revre Street","vreve");
-        Gson gson = new Gson().newBuilder().create();
-        System.out.println(gson.toJson(salesEvent));
+
+        JsonDisplay.showJSON(salesEvent);
     }
 }

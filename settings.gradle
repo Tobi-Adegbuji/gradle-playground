@@ -1,2 +1,3 @@
 rootProject.name = 'gradle-first-steps'
+include 'json-display'  //Here is the module we added
 
